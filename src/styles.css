@@ -5,7 +5,7 @@ body {
 #container {
     width: 500px;
     height: 900px;
-    background-color: aqua;
+    /*background-color: aqua;*/
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -16,26 +16,26 @@ body {
 }
 
 #right {
-    background-color: brown;
+    /*background-color: brown;*/
     display: flex;
     flex-direction: column;
 }
 
 #header {
     height: 100px;
-    background-color:aquamarine;
+    /*background-color:aquamarine;*/
 }
 
 #summary {
-    height: 200px;
-    background-color: blue;
+    height: 184px;
+    /*background-color: blue;*/
 }
 
 #innerSquare {
     width: 90%;
-    height: 160px;
+    height: 144px;
     margin-top: 20px;
-    background-color: burlywood;
+    /*background-color: burlywood;*/
     display: flex;
 }
 
@@ -44,12 +44,43 @@ body {
     background-color: chartreuse;
 }
 
+#innerSquareLeft img {
+    height: 100%;
+    object-fit: fill;
+}
+
 #innerSquareRight {
     width: 60%;
-    background-color: chocolate;
+    /*background-color: chocolate;*/
+    padding-left: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: rgb(112, 111, 111);
+}
+
+.bolded {
+    font-size: 22px;
 }
 
 #details {
-    height: 600px;
+    height: 616px;
     background-color: cadetblue;
+}
+
+#dataDiv {
+    background-color: yellowgreen;
+    display: flex;
+    width: 100%;
+}
+
+#keysDiv {
+    width: 30%;
+    background-color: yellow;
+}
+
+#valueDiv {
+    width: 70%;
+    background-color: tomato;
 }
