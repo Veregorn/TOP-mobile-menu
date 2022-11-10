@@ -1,4 +1,5 @@
 import "./styles.css";
+import Logo from "./logo-iberika-trail.png";
 
 // Create an element with an optional CSS id
 function createElementWithId(tag, id) {
@@ -49,6 +50,11 @@ header.appendChild(title);
 const innerSquare = createElementWithId("div", "innerSquare");
 const innerSquareLeft = createElementWithId("div", "innerSquareLeft");
 const innerSquareRight = createElementWithId("div", "innerSquareRight");
+
+// Adding logo race
+const iberikaLogo = new Image();
+iberikaLogo.src = Logo;
+innerSquareLeft.appendChild(iberikaLogo);
 
 innerSquare.appendChild(innerSquareLeft);
 innerSquare.appendChild(innerSquareRight);
