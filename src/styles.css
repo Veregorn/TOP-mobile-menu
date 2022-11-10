@@ -1,0 +1,33 @@
+#container {
+    width: 500px;
+    height: 900px;
+    background-color: aqua;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#left {
+    background-color: blueviolet;
+}
+
+#right {
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+}
+
+#header {
+    height: 100px;
+    background-color:aquamarine;
+}
+
+#summary {
+    height: 200px;
+    background-color: blue;
+}
+
+#details {
+    height: 600px;
+    background-color: cadetblue;
+}
