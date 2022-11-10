@@ -10,6 +10,16 @@ function createElementWithId(tag, id) {
   return element;
 }
 
+// Create an element with an optional CSS class
+function createElementWithClass(tag, className) {
+  const element = document.createElement(tag);
+  if (className) {
+    element.classList.add(className);
+  }
+
+  return element;
+}
+
 // Create an HTML skeleton
 const container = createElementWithId("div", "container");
 const left = createElementWithId("div", "left");
@@ -27,3 +37,22 @@ container.appendChild(left);
 container.appendChild(right);
 
 document.body.appendChild(container);
+
+// Right 'div' elements creation
+// Header
+const title = createElementWithClass("h2", "title");
+title.innerHTML = "Race Summary";
+
+header.appendChild(title);
+
+// Summary
+const innerSquare = createElementWithId("div", "innerSquare");
+const innerSquareLeft = createElementWithId("div", "innerSquareLeft");
+const innerSquareRight = createElementWithId("div", "innerSquareRight");
+
+innerSquare.appendChild(innerSquareLeft);
+innerSquare.appendChild(innerSquareRight);
+
+summary.appendChild(innerSquare);
+
+// Details
