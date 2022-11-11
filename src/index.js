@@ -1,5 +1,6 @@
 import "./styles.css";
 import Logo from "./logo-iberika-trail.png";
+import Profile from "./iberika-trail-torrelaguna-profile.jpg";
 
 // Create an element with an optional CSS id
 function createElementWithId(tag, id) {
@@ -28,11 +29,13 @@ const right = createElementWithId("div", "right");
 const header = createElementWithId("div", "header");
 const summary = createElementWithId("div", "summary");
 const details = createElementWithId("div", "details");
+const profile = createElementWithId("div", "profile");
 
 // Create DOM architecture
 right.appendChild(header);
 right.appendChild(summary);
 right.appendChild(details);
+right.appendChild(profile);
 
 container.appendChild(left);
 container.appendChild(right);
@@ -137,3 +140,14 @@ valuesDiv.appendChild(timeValue);
 valuesDiv.appendChild(distValue);
 valuesDiv.appendChild(ascentElevValue);
 valuesDiv.appendChild(descentElevValue);
+
+// Profile
+const raceProfile = createElementWithClass("h3","bolded");
+raceProfile.innerHTML = "Race Profile";
+
+profile.appendChild(raceProfile);
+
+// Adding logo race
+const iberikaProfile = new Image();
+iberikaProfile.src = Profile;
+profile.appendChild(iberikaProfile);
