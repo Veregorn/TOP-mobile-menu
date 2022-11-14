@@ -6,25 +6,31 @@ body {
   width: 500px;
   height: 900px;
   /*background-color: aqua;*/
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  border: solid 1px rgb(209, 207, 207);
+  /*grid-template-columns: 1fr 4fr;*/
+  /*border: solid 1px rgb(209, 207, 207);*/
+  padding-left: 100px;
 }
 
-#left {
-  /*background-color: blueviolet;*/
-}
-
-#right {
-  /*background-color: brown;*/
-  display: flex;
-  flex-direction: column;
+label .menu {
+  background-color: #DA4E3A;
+  width: 200px;
+  height: 200px;
+  z-index: 100;
+  border-radius: 50%;
+  position: absolute;
+  left: -100px;
+  top: -100px;
 }
 
 #header {
   height: 91px;
   /*background-color:aquamarine;*/
+}
+
+.title {
+    margin-top: 25px;
 }
 
 #summary {
